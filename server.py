@@ -1,10 +1,17 @@
-// for ip logger scenario (optional)
+# for ip logger scenario (optional)
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import logging
+from werkzeug.serving import make_server
 
 app = Flask(__name__)
+app.config['DEBUG'] = False
+
 CORS(app)  
+
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 
 @app.route('/log_ip', methods=['POST'])
 def log_ip():

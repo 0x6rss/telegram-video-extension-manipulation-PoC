@@ -1,0 +1,4 @@
+flask_cors
+requests
+python-dotenv
+inquirer

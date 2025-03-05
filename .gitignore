@@ -1,3 +1,4 @@
 .env
 *.htm
 *.mp4
+.venv

@@ -30,5 +30,3 @@ Before running this PoC, you need to configure a few things in your environment:
      - `BOT_TOKEN`: Your Telegram bot token. You can get this by creating a bot on Telegram via BotFather.
      - `CHAT_ID`: The chat ID where you want to send the video. This can be a group or individual chat.
      - `IP`: The IP address or hostname of the server where you want to log the IP and geolocation data.
-
-    ```

@@ -57,9 +57,9 @@ files = {
 
 
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendVideo"
+cover_url = "https://github.com/drconfig/telegram-video-extension-manipulation-PoC/blob/addcover/blue.jpg?raw=true"
 
-
-data = {"chat_id": CHAT_ID, "supports_streaming": False}
+data = {"chat_id": CHAT_ID, "supports_streaming": False , "cover" : cover_url}
 response = requests.post(url, data=data, files=files)
 
 if response.status_code == 200:
